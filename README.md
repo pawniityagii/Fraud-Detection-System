@@ -79,7 +79,7 @@ I'm a Computer Science undergrad passionate about turning data into actionable i
 Let's connect:  
 LinkedIn: https://linkedin.com/in/pawnityagi  
 Portfolio: https://pawnityagi.my.canva.site  
-Website: https://pawni-tyagi-xc7s61k.gamma.site/
+Website: https://pawni-tyagi-xc7s61k.gamma.site/  
 GitHub: https://github.com/pawniityagii
 
 If this repo helped or inspired you, leave a ⭐ — it makes my day!
