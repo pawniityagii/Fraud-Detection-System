@@ -1,82 +1,85 @@
-# Fraud Detection System
+**Tags:** `Python` • `Machine Learning` • `Fraud Detection` • `Supervised Learning` • `Data Analysis` • `ROC-AUC` • `SHAP`  
 
-## Overview
-• This project implements a **Fraud Detection System** using Python and machine learning.
-• The goal is to **analyze transaction data, detect fraudulent patterns, and provide insights**.
-• The project includes a working **Colab notebook**, a **sample dataset**, and **visual outputs** for reference.
+# 💳 Fraud Detection System
+> Detecting fraudulent transactions using Machine Learning.
 
----
+A project that applies **Machine Learning models** to detect fraudulent patterns in transaction data. The system combines **data cleaning, feature engineering, supervised learning, and explainability** to identify fraud effectively and provide actionable insights.
 
-## Repo Structure
-Fraud-Detection-System/
-│
-├── notebooks/
-│ └── Fraud_Detection_Colab.ipynb # Main Colab notebook with full code
-├── data/
-│ └── fraud_sample.csv # Small sample dataset
-├── images/
-│ └── roc_curve.png # ROC curve screenshot
-│ └── cost_threshold.png # Cost threshold optimization screenshot
-| └── confusion_matrix.png # Confusion Matrix screenshot
-│ └── shap_values.png # SHAP values screenshot
-├── requirements.txt # Required Python packages
-├── README.md # This file
-├── LICENSE
-└── .gitignore
+## 📌 Features
 
----
+- Cleaned and preprocessed transaction data (handling missing values, outliers, multicollinearity)  
+- Engineered fraud-relevant features (balance deltas, errors, ratios, merchant indicators)  
+- Applied multiple ML models: Logistic Regression, Gradient Boosting, LightGBM/XGBoost  
+- Evaluated performance with ROC-AUC, PR-AUC, Precision/Recall, Confusion Matrix  
+- Explainable results using SHAP values and permutation importance  
 
-## How to Run
+## 🚀 Tech Stack & Environment
+This project was developed using Google Colab — a cloud-based Jupyter environment that makes it easy to run and share notebooks without any setup.  
 
-### Option 1: Using Google Colab (Recommended)
-1. Go to [Google Colab](https://colab.research.google.com/).
-2. Click **File → Open notebook → GitHub**.
-3. Paste this repo URL: `https://github.com/pawniityagii/Fraud-Detection-System`
-4. Open `notebooks/fraud_detection_sys.ipynb`.
-5.  Run all cells.
-   - The notebook uses the **sample dataset (`fraud_sample.csv`)** by default.
+⚙️ Built With:  
+🐍 Python 3.x  
+🧠 scikit-learn (ML modeling)  
+🧾 Pandas & NumPy (data wrangling)  
+📊 Matplotlib & Seaborn (visualizations)  
 
-### Option 2: Using Local Machine
-1. Clone the repo:
+▶️ Run it Yourself  
+Click below to open the notebook in Colab and try it out:  
+[Open Notebook in Colab](https://colab.research.google.com/github/pawniityagii/FraudDetectionSystem/blob/main/notebooks/fraud_detection_sys.ipynb)
+
+## 📂 Project Structure
+
+FraudDetectionSystem/
+├── notebooks/              # Main Colab notebook with full code  
+├── data/                   # Sample dataset (`fraud_sample.csv`)  
+├── images/                 # Screenshots of outputs/graphs  
+├── requirements.txt        # List of dependencies  
+├── README.md               # This file  
+├── LICENSE  
+└── .gitignore  
+
+## 🛠️ Installation & Usage
+
+1. Clone the repository:
 git clone https://github.com/pawniityagii/Fraud-Detection-System.git
 
 3. Install required packages:
 pip install -r requirements.txt
 
-5. Open the notebook in Jupyter or VSCode.
+3. Run the notebook in Colab:
+- Open `notebooks/fraud_detection_sys.ipynb` and run all cells  
+- Use `data/fraud_sample.csv` for quick testing  
+- To run on the full dataset (6.3M+ rows), download it from the link below and replace the sample path in the notebook  
 
----
+## 📊 Dataset
 
-## Dataset
-• Sample Dataset: Included in data/fraud_sample.csv (small subset).
-• Full Dataset (6.3M+ records): [Download here](google.com/url?sa=D&q=https://drive.google.com/uc%3Fexport%3Ddownload%26confirm%3D6gh6%26id%3D1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV&ust=1758298440000000&usg=AOvVaw1WImSbYlkDRgs-e_xceoHQ&hl=en-GB)
-• You can use it in Colab by mounting Google Drive and replacing the sample dataset path.
+- Sample Dataset: Included in `data/fraud_sample.csv`  
+- Full Dataset (6.3M+ records): https://drive.usercontent.google.com/download?id=1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV&export=download&authuser=0
 
----
+## 📈 Results & Insights
 
-## Project Highlights
-• Machine Learning Models: Logistic Regression, Gradient Boosting, LightGBM/XGBoost.
-• Data Cleaning & Feature Engineering: Handling missing values, outliers, multicollinearity, and creating fraud-relevant features.
-• Evaluation Metrics: ROC-AUC, PR-AUC, Precision/Recall, Confusion Matrix, Cost-sensitive threshold optimization.
-• Explainability: SHAP values and permutation importance.
+- Model Performance: Evaluated with ROC-AUC, PR-AUC, and confusion matrix  
+- Explainability: SHAP plots highlight which features contribute most to fraud predictions  
+- Business Impact: Provides actionable insights for fraud prevention strategies
 
----
+## 📸 Sample Outputs
 
-## Sample Outputs
 <table> <tr> <td align="center"> <img src="images/confusion_matrix.png" width="250"><br> <b>Confusion Matrix</b> </td> <td align="center"> <img src="images/cost_threshold.png" width="250"><br> <b>Cost Threshold Optimization</b> </td> </tr> <tr> <td align="center"> <img src="images/shap_values.png" width="250"><br> <b>SHAP Values</b> </td> <td align="center"> <img src="images/roc_curve.png" width="250"><br> <b>ROC Curve</b> </td> </tr> </table>
 
----
+## 🧠 Future Enhancements
 
-## Notes
-• The notebook is ready-to-run in Colab.
-• Use the sample dataset for quick tests; full dataset is needed for full-scale analysis.
-• All outputs and graphs shown in the notebook correspond to the dataset provided.
+- Deploy a live dashboard for monitoring fraud in real-time  
+- Add automated alerts for high-risk transactions  
+- Integrate more advanced models (e.g., XGBoost tuning, ensemble learning)  
+- Implement a retraining pipeline with incoming transaction data  
 
----
+## 🙋 About Me
 
-Author
-Pawni Tyagi
+I'm a Computer Science undergrad passionate about turning data into actionable insights. This project is a practical demonstration of applying ML to solve real-world fraud detection challenges.
 
-Final Year B.Tech Computer Science
+Let's connect:  
+LinkedIn: https://linkedin.com/in/pawnityagi  
+Portfolio: https://pawnityagi.my.canva.site  
+Website: https://pawni-tyagi-xc7s61k.gamma.site/
+GitHub: https://github.com/pawniityagii
 
-Project for learning and demonstration of ML-based fraud detection.
+If this repo helped or inspired you, leave a ⭐ — it makes my day!
