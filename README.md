@@ -1,8 +1,8 @@
 # Fraud Detection System
 
 ## Overview
-• This project implements a **Fraud Detection System** using Python and machine learning.  
-• The goal is to **analyze transaction data, detect fraudulent patterns, and provide insights**.  
+• This project implements a **Fraud Detection System** using Python and machine learning.
+• The goal is to **analyze transaction data, detect fraudulent patterns, and provide insights**.
 • The project includes a working **Colab notebook**, a **sample dataset**, and **visual outputs** for reference.
 
 ---
@@ -29,21 +29,21 @@ Fraud-Detection-System/
 ## How to Run
 
 ### Option 1: Using Google Colab (Recommended)
-1. Go to [Google Colab](https://colab.research.google.com/).  
-2. Click **File → Open notebook → GitHub**.  
-3. Paste this repo URL: `https://github.com/pawniityagii/Fraud-Detection-System`  
-4. Open `notebooks/fraud_detection_sys.ipynb`.  
-5. Run all cells.  
-   - The notebook uses the **sample dataset (`fraud_sample.csv`)** by default.  
+1. Go to [Google Colab](https://colab.research.google.com/).
+2. Click **File → Open notebook → GitHub**.
+3. Paste this repo URL: `https://github.com/pawniityagii/Fraud-Detection-System`
+4. Open `notebooks/fraud_detection_sys.ipynb`.
+5.  Run all cells.
+   - The notebook uses the **sample dataset (`fraud_sample.csv`)** by default.
 
 ### Option 2: Using Local Machine
 1. Clone the repo:
-   git clone https://github.com/pawniityagii/Fraud-Detection-System.git
+git clone https://github.com/pawniityagii/Fraud-Detection-System.git
 
-2. Install required packages:
+3. Install required packages:
 pip install -r requirements.txt
 
-3. Open the notebook in Jupyter or VSCode.
+5. Open the notebook in Jupyter or VSCode.
 
 ---
 
